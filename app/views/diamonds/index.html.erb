@@ -1,4 +1,13 @@
 <h1>Diamonds#index</h1>
+<% @diamonds.each do |diamond| %>
+  Culet:<%= diamond.culet %>
+  Color:<%= diamond.color %>
+  Clar:<%= diamond.clar %>
+  List Price:<%= diamond.list_price %>
+  
+  <br>
+<% end %>
+
 <%= form_for(Diamond.new) do |f| %>
     Shape:
     <%= f.text_field :shape %>
