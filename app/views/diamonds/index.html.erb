@@ -1,2 +1,68 @@
 <h1>Diamonds#index</h1>
-<p>Find me in app/views/diamonds/index.html.erb</p>
+<%= form_for(Diamond.new) do |f| %>
+    Shape:
+    <%= f.text_field :shape %>
+    
+    Weight:
+    <%= f.text_field :weight %>
+    
+    Color:
+    <%= f.text_field :color %>
+    
+    Clar:
+    <%= f.text_field :clar %>
+    
+    Cut:
+    <%= f.text_field :cut %>
+    
+    Pol:
+    <%= f.text_field :pol %>
+    
+    Sym:
+    <%= f.text_field :sym %>
+    
+    Fluo:
+    <%= f.text_field :fluo %>
+    
+    Lab:
+    <%= f.text_field :lab %>
+    
+    Depth:
+    <%= f.text_field :depth %>
+    
+    Table:
+    <%= f.text_field :table %>
+    
+    Measurements:
+    <%= f.text_field :measurements %>
+    
+    Culet:
+    <%= f.text_field :culet %>
+    
+    Girdle:
+    <%= f.text_field :girdle %>
+    
+    List Price:
+    <%= f.text_field :list_price %>
+    
+    % Rap:
+    <%= f.text_field :rap %>
+    
+    Sale Price:
+    <%= f.text_field :sale_price %>
+    
+    Total Price:
+    <%= f.text_field :total_price %>
+    
+    Location:
+    <%= f.text_field :location %>
+    
+    Cert#:
+    <%= f.text_field :cert %>
+    
+    <%= f.submit %>
+<% end %>
+
+
+
+ 

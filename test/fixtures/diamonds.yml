@@ -19,7 +19,8 @@ one:
   sale_price: 1
   total_price: 1.5
   location: MyString
-  cert#: MyString
+  cert: MyString
+  clar: MyString
 
 two:
   shape: MyString
@@ -40,4 +41,5 @@ two:
   sale_price: 1
   total_price: 1.5
   location: MyString
-  cert#: MyString
+  cert: MyString
+  clar: MyString
