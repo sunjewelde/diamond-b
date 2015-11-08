@@ -1,0 +1,45 @@
+<h1>Diamonds#Chart</h1>
+
+<%= line_chart History.group(:clar).group(:date).maximum(:list_price) %>
+<%#= line_chart @histories.map{|history|
+    {name: history.clar, data: history.feats.group(:date).list_price}
+} %>
+
+<table class="table table-bordered">
+  <tr>
+    <th>Date</th>
+    <th>Weight</th>
+    <th>Color</th>
+    <th>Clar</th>
+    <th>List Price</th>
+  </tr>
+  <% @histrories.each do |history| %>
+    <tr>
+      <td><%= history.date %></td>
+      <td><%= history.weight %></td>
+      <td><%= history.color %></td>
+      <td><%= history.clar %></td>
+      <td><%= history.list_price %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= form_for(History.new) do |f| %>
+    Date:
+    <%= f.date_field :date %>
+    
+    Weight:
+    <%= f.text_field :weight %>
+    
+    Color:
+    <%= f.text_field :color %>
+    
+    Clar:
+    <%= f.text_field :clar %>
+
+    List Price:
+    <%= f.text_field :list_price %>
+
+    
+    <%= f.submit %>
+<% end %>

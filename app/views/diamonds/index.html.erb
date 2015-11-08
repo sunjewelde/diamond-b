@@ -1,12 +1,21 @@
 <h1>Diamonds#index</h1>
-<% @diamonds.each do |diamond| %>
-  Culet:<%= diamond.culet %>
-  Color:<%= diamond.color %>
-  Clar:<%= diamond.clar %>
-  List Price:<%= diamond.list_price %>
-  
-  <br>
-<% end %>
+<table class="table table-bordered">
+  <tr>
+    <th>Culet</th>
+    <th>Color</th>
+    <th>Clar</th>
+    <th>List Price</th>
+  </tr>
+  <% @diamonds.each do |diamond| %>
+    <tr>
+      <td><%= diamond.culet %></td>
+      <td><%= diamond.color %></td>
+      <td><%= diamond.clar %></td>
+      <td><%= diamond.list_price %></td>
+    </tr>
+  <% end %>
+</table>
+
 
 <%= form_for(Diamond.new) do |f| %>
     Shape:
