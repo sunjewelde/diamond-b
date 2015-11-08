@@ -17,6 +17,6 @@ require "csv"
 #                 :cert => row[19])
 # end
 
-CSV.foreach('db/price.csv') do |row|
-  History.create(:date => row[0], :weight => row[1], :color => row[2], :clar => row[3], :list_price => row[4])
-end
+# CSV.foreach('db/price.csv') do |row|
+#   History.create(:date => row[0], :weight => row[1], :color => row[2], :clar => row[3], :list_price => row[4])
+# end
